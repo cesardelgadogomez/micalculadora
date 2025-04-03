@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  background:
+      linear-gradient(
+      45deg, 
+      #0a0a0a, 
+      #3a4452);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  padding: 20px;
+  background: transparent;
+  border-radius: 20px;
+  border: 1px solid #717377;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+input {
+  width: 320px;
+  border: none;
+  padding: 24px;
+  margin: 10px;
+  background: transparent;
+  box-shadow: 0px 3px 20px rgba(84, 84, 84, 0.1);
+  font-size: 40px;
+  text-align: right;
+  cursor: pointer;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+button {
+  border:none;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50%;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+              8px 8px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.equal-btn {
+  background-color: rgb(226, 122, 3);
+}
+
+.operator {
+  color: #6dee0a;
+}
+
+@media screen and (max-width: 400px) {
+  input {
+    width: 95%;
+    font-size: 30px;
+  }
+  button {
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    margin: 5px;
+  }
+  .calculator {
+    padding: 5px;
+    width: 90%;
+  }
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+  .buttons {
+    gap: .5rem;
+  }
+}
+
+@media screen and (max-width: 310px) {
+
+  button {
+    width: 45px;
+    height: 45px;
+    font-size: 13px;
+    margin: 3px;
+  }
+
+}
